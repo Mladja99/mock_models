@@ -2,10 +2,10 @@
 name = "insurance-model-c"
 version = "0.1.0"
 description = "Brand-based car insurance pricing model"
-authors = ["Your Name <you@example.com>"]
+authors = ["Mladja99 <djomlanikolic@hotmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/username/mock-models-repo"
-repository = "https://github.com/username/mock-models-repo"
+homepage = "https://github.com/Mladja99/mock_models"
+repository = "https://github.com/Mladja99/mock_models"
 keywords = ["insurance", "pricing", "model"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -30,4 +30,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/username/mock-models-repo/issues"
+"Bug Tracker" = "https://github.com/Mladja99/mock_models/issues"
