@@ -25,19 +25,19 @@ You can install models directly from this GitHub repository:
 
 ```bash
 # Install Model A
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-a
+pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_a
 
 # Install Model B
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-b
+pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_b
 
 # Install Model C
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-c
+pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_c
 
 # Or install all at once
 pip install \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-a \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-b \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model-c
+  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_a \
+  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_b \
+  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_c
 ```
 
 #### Using Poetry
@@ -60,13 +60,13 @@ poetry install
 
 ```bash
 # Install from specific branch
-pip install git+https://github.com/yourusername/your-repo-name.git@main#subdirectory=packages/model-a
+pip install git+https://github.com/yourusername/your-repo-name.git@main#subdirectory=packages/model_a
 
 # Install from specific tag
-pip install git+https://github.com/yourusername/your-repo-name.git@v0.1.0#subdirectory=packages/model-a
+pip install git+https://github.com/yourusername/your-repo-name.git@v0.1.0#subdirectory=packages/model_a
 
 # Install from specific commit
-pip install git+https://github.com/yourusername/your-repo-name.git@abc123#subdirectory=packages/model-a
+pip install git+https://github.com/yourusername/your-repo-name.git@abc123#subdirectory=packages/model_a
 ```
 
 ### Local Installation (Development)
@@ -79,7 +79,7 @@ git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 
 # Install a model in editable mode
-cd packages/model-a
+cd packages/model_a
 pip install -e .
 
 # Or with poetry
@@ -273,7 +273,7 @@ print(result['price'])  # Higher price due to luxury brand
 
 ```bash
 # Test Model A
-cd packages/model-a
+cd packages/model_a
 pytest
 
 # Test all models

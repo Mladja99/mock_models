@@ -1,26 +1,26 @@
-# Insurance Model A - Age Based Pricing
+# Insurance Model C - Brand Based Pricing
 
-Age-focused car insurance pricing model.
+Brand-focused car insurance pricing model.
 
 ## Installation
 ```bash
 # Via pip from GitHub
-pip install git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model-a
+pip install git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model_c
 
 # Via poetry from GitHub
-poetry add git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model-a
+poetry add git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model_c
 
 # Specific version/branch/tag
-pip install git+https://github.com/username/mock-models-repo.git@v0.1.0#subdirectory=packages/model-a
-poetry add git+https://github.com/username/mock-models-repo.git#branch=main&subdirectory=packages/model-a
+pip install git+https://github.com/username/mock-models-repo.git@v0.1.0#subdirectory=packages/model_c
+poetry add git+https://github.com/username/mock-models-repo.git#branch=main&subdirectory=packages/model_c
 ```
 
 ## Usage
 ```python
-from model_a import ModelA
+from model_c import ModelC
 from datetime import date
 
-model = ModelA()
+model = ModelC()
 
 result = model.calculate_price(
     birthdate=date(1995, 6, 15),
@@ -35,7 +35,7 @@ print(f"Price: {result['price']} {result['currency']}")
 
 ## API
 
-### `ModelA.calculate_price()`
+### `ModelB.calculate_price()`
 
 **Parameters:**
 - `birthdate` (date): Driver's birth date
@@ -54,10 +54,9 @@ print(f"Price: {result['price']} {result['currency']}")
 ## Pricing Logic
 
 This model focuses on driver age:
-- Age < 25: Higher premiums (young driver risk)
-- Age 25-50: Standard premiums
-- Age 50-65: Slightly increased premiums
-- Age 65+: Higher premiums (senior driver risk)
+- Luxury Brand: Higher premiums
+- Premium Brand: Slightly increased premiums
+- Economy Brand: Standard premiums
 
 ## Author:
 

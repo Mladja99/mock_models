@@ -5,14 +5,14 @@ Experience-focused car insurance pricing model.
 ## Installation
 ```bash
 # Via pip from GitHub
-pip install git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model-b
+pip install git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model_b
 
 # Via poetry from GitHub
-poetry add git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model-b
+poetry add git+https://github.com/username/mock-models-repo.git#subdirectory=packages/model_b
 
 # Specific version/branch/tag
-pip install git+https://github.com/username/mock-models-repo.git@v0.1.0#subdirectory=packages/model-b
-poetry add git+https://github.com/username/mock-models-repo.git#branch=main&subdirectory=packages/model-b
+pip install git+https://github.com/username/mock-models-repo.git@v0.1.0#subdirectory=packages/model_b
+poetry add git+https://github.com/username/mock-models-repo.git#branch=main&subdirectory=packages/model_b
 ```
 
 ## Usage

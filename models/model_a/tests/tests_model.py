@@ -1,14 +1,14 @@
-from ..model_c import ModelC
+from models.model_a.src.model_a import ModelA
 from datetime import date
 
 
 def test_model_initialization():
-    model = ModelC()
-    assert model.name == "Model C - Brand Based Pricing"
+    model = ModelA()
+    assert model.name == "Model A - Age Based Pricing"
 
 
 def test_calculate_price():
-    model = ModelC()
+    model = ModelA()
     result = model.calculate_price(
         birthdate=date(1995, 6, 15),
         driver_license_date=date(2015, 8, 20),
@@ -23,11 +23,11 @@ def test_calculate_price():
     assert "metadata" in result
     assert result["currency"] == "EUR"
     assert result["price"] > 0
-    assert result["model_name"] == "Model C - Brand Based Pricing"
+    assert result["model_name"] == "Model A - Age Based Pricing"
 
 
 def test_health_check():
-    model = ModelC()
+    model = ModelA()
     health = model.health_check()
     assert health["status"] == "healthy"
-    assert health["model"] == "Model C - Brand Based Pricing"
+    assert health["model"] == "Model A - Age Based Pricing"

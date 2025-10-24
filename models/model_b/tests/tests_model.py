@@ -1,4 +1,4 @@
-from ..model_b import ModelB
+from models.model_b.src.model_b import ModelB
 from datetime import date
 
 
