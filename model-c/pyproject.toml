@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "insurance-model-c"
+version = "0.1.0"
+description = "Brand-based car insurance pricing model"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+homepage = "https://github.com/username/mock-models-repo"
+repository = "https://github.com/username/mock-models-repo"
+keywords = ["insurance", "pricing", "model"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+black = "^23.0"
+mypy = "^1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/username/mock-models-repo/issues"
