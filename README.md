@@ -25,30 +25,30 @@ You can install models directly from this GitHub repository:
 
 ```bash
 # Install Model A
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_a
+pip install git+https://github.com/Mladja99/mock_models.git#subdirectory=models/model_a
 
 # Install Model B
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_b
+pip install git+https://github.com/Mladja99/mock_models.git#subdirectory=models/model_b
 
 # Install Model C
-pip install git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_c
+pip install git+https://github.com/Mladja99/mock_models.git#subdirectory=models/model_c
 
 # Or install all at once
 pip install \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_a \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_b \
-  git+https://github.com/yourusername/your-repo-name.git#subdirectory=packages/model_c
+  git+https://github.com/Mladja99/mock_models.git#subdirectory=models/model_a \
+  git+https://github.com/Mladja99/mock_models.git#subdirectory=packages/model_b \
+  git+https://github.com/Mladja99/mock_models.git#subdirectory=packages/model_c
 ```
 
 #### Using Poetry
 
-Add to your `pyproject.toml`:
+Add to `pyproject.toml`:
 
 ```toml
 [tool.poetry.dependencies]
-insurance-model-a = {git = "https://github.com/yourusername/your-repo-name.git", subdirectory = "packages/model-a"}
-insurance-model-b = {git = "https://github.com/yourusername/your-repo-name.git", subdirectory = "packages/model-b"}
-insurance-model-c = {git = "https://github.com/yourusername/your-repo-name.git", subdirectory = "packages/model-c"}
+insurance-model-a = { git = "https://github.com/Mladja99/mock_models.git", subdirectory = "models/model_a", tag = "v0.1.0" }
+insurance-model-b = { git = "https://github.com/Mladja99/mock_models.git", subdirectory = "models/model_b", tag = "v0.1.0" }
+insurance-model-c = { git = "https://github.com/Mladja99/mock_models.git", subdirectory = "models/model_c", tag = "v0.1.0" }
 ```
 
 Then run:
@@ -60,13 +60,13 @@ poetry install
 
 ```bash
 # Install from specific branch
-pip install git+https://github.com/yourusername/your-repo-name.git@main#subdirectory=packages/model_a
+pip install git+https://github.com/Mladja99/mock_models.git@main#subdirectory=models/model_a
 
 # Install from specific tag
-pip install git+https://github.com/yourusername/your-repo-name.git@v0.1.0#subdirectory=packages/model_a
+pip install git+https://github.com/Mladja99/mock_models.git@v0.1.0#subdirectory=models/model_a
 
 # Install from specific commit
-pip install git+https://github.com/yourusername/your-repo-name.git@abc123#subdirectory=packages/model_a
+pip install git+https://github.com/Mladja99/mock_models.git@abc123#subdirectory=models/model_a
 ```
 
 ### Local Installation (Development)
@@ -75,11 +75,11 @@ For local development, clone the repository and install in editable mode:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Mladja99/mock_models.git
 cd your-repo-name
 
 # Install a model in editable mode
-cd packages/model_a
+cd models/model_a
 pip install -e .
 
 # Or with poetry
@@ -308,7 +308,7 @@ Current version: **0.1.0**
 
 These models are designed to be used with the Pricing Engine API Gateway.
 
-See the [API Gateway Repository](https://github.com/yourusername/api-gateway-repo) for integration examples.
+See the [API Gateway Repository](https://github.com/Mladja99/ominimo-api-gateway) for integration examples.
 
 ## Requirements
 
